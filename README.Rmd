@@ -1,0 +1,41 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# panizimager
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of panizimager is to work with images. For now, it only has a function called rotate_image. This function rotates an image counter-clockwise for a given number of times. You should pass a loaded image via imager library to the function. 
+
+## Installation
+
+You can install the released version of panizimager from 
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("paradise1260/panizimager")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(panizimager)
+library(imager)
+mandrill <- load.image('../mandrill.png')
+plot(mandrill)
+plot(rotate_image(mandrill, 3))
+```
+
