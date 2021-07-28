@@ -14,6 +14,7 @@ knitr::opts_chunk$set(
 # panizimager
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/paradise1260/panizimager/workflows/R-CMD-check/badge.svg)](https://github.com/paradise1260/panizimager/actions)
 <!-- badges: end -->
 
 The goal of panizimager is to work with images. For now, it only has a function called rotate_image. This function rotates an image counter-clockwise for a given number of times. You should pass a loaded image via imager library to the function. 
@@ -34,8 +35,7 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(panizimager)
 library(imager)
-mandrill <- load.image('../mandrill.png')
-plot(mandrill)
-plot(rotate_image(mandrill, 3))
+plot(boats)
+plot(rotate_image(boats, 3))
 ```
 

@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/paradise1260/panizimager/workflows/R-CMD-check/badge.svg)](https://github.com/paradise1260/panizimager/actions)
 <!-- badges: end -->
 
 The goal of panizimager is to work with images. For now, it only has a
@@ -42,14 +43,13 @@ library(imager)
 #> The following object is masked from 'package:base':
 #> 
 #>     save.image
-mandrill <- load.image('../mandrill.png')
-plot(mandrill)
+plot(boats)
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
 
 ``` r
-plot(rotate_image(mandrill, 3))
+plot(rotate_image(boats, 3))
 ```
 
 <img src="man/figures/README-example-2.png" width="100%" />
