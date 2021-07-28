@@ -9,8 +9,7 @@
 #' @export
 #'
 #' @examples
-#' library(imager)
-#' rotate_image(boats, 3)
+#' rotate_image(imager::boats, 3)
 rotate_image <- function(img, rot_num = 1) {
     # Handling Errors
     if(rot_num %% 1 != 0) {
