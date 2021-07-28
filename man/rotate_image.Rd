@@ -18,6 +18,5 @@ array of image
 rotate_image rotates an image counter-clockwise for a given number of times.
 }
 \examples{
-library(imager)
-rotate_image(boats, 3)
+rotate_image(imager::boats, 3)
 }
